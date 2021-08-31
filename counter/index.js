@@ -11,6 +11,17 @@ function decrement() {
     countEl.innerText = count;
 }          
 
+let saveEl = document.getElementById("save-el")
+
 function save() {
-    console.log(count)
+    let display = count + " - ";
+    saveEl.textContent += display; 
+    count = 0;
+    countEl.textContent = 0;
 }
+
+let namee = "Sabs";
+let greeting = "Hi boss, my name is ";
+welcomeEl.innerText = greeting + namee;
+
+welcomeEl.innerText += " GAMER";
