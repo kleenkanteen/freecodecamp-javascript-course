@@ -1,37 +1,12 @@
-let num1 = 8;
-let num2 = 4;
-document.getElementById("num1-el").textContent = num1;
-document.getElementById("num2-el").textContent = num2;
+let firstCard = 2;
+let secondCard = 7;
 
-let result = document.getElementById("sum-el");
+let sum = firstCard + secondCard;
 
-function add() {
-    let math = num1 + num2;
-    result.textContent =
-        "Sum: " + math + " since " + num1 + " + " + num2 + " = " + math;
-}
-
-function subtract() {
-    let math = num1 - num2;
-    result.textContent =
-        "Difference: " + math + " since " + num1 + " - " + num2 + " = " + math;
-}
-
-function divide() {
-    let math = num1 / num2;
-    result.textContent =
-        "Division: " + math + " since " + num1 + " / " + num2 + " = " + math;
-}
-
-function multiply() {
-    let math = num1 * num2;
-    result.textContent =
-        "Multiplication: " +
-        math +
-        " since " +
-        num1 +
-        " * " +
-        num2 +
-        " = " +
-        math;
+if (sum < 21) {
+    console.log("New card?");
+} else if (sum === 21) {
+    console.log("Wooo you won!");
+} else {
+    console.log("You lost!");
 }
